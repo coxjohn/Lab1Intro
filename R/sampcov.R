@@ -1,0 +1,3 @@
+sampcov = function(x){
+
+}

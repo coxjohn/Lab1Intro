@@ -1,0 +1,3 @@
+sampcor = function(x){
+
+}

@@ -1,0 +1,3 @@
+sampmean = function(x){
+
+}
