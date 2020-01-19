@@ -19,7 +19,7 @@ library(Lab1Intro)
 ```
 
 
-# $\LaTeX$ formulae
+## $\LaTeX$ formulae
 Sample mean:
 $$\bar{x}_{k} = \frac{1}{n}\sum_{j=1}^{n}x_{jk}\qquad k = 1,2,...,p\qquad(1-1)$$
 Sample covariance:
@@ -38,3 +38,13 @@ $$\textbf{D}_{(p\times p)}^{1/2} = \begin{bmatrix}
 \end{bmatrix}\qquad (3-28)$$
 Sample correlation matrix:
 $$\textbf{R}=\textbf{D}^{-1/2}\textbf{SD}^{-1/2}\qquad (3-29)$$
+##Paper mill data
+Here is an analysis of the data from Table 1-2 from a paper mill using the functions created for this assignment:
+```{r}
+data = read.table("T1-2.DAT")
+
+sampmean(data)
+sampcov(data)
+sampcor(data)
+```
+
