@@ -1,0 +1,40 @@
+---
+title: "Lab1"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Lab1}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(Lab1Intro)
+```
+
+
+# $\LaTeX$ formulae
+Sample mean:
+$$\bar{x}_{k} = \frac{1}{n}\sum_{j=1}^{n}x_{jk}\qquad k = 1,2,...,p\qquad(1-1)$$
+Sample covariance:
+$$s_{ik} = \frac{1}{n}\sum_{j=1}^{n}(x_{ji}-\bar{x}_{i})(x_{jk} - \bar{x}_{k})\qquad i=1,2,...,p\quad k=1,2,...,p\qquad (1-4)$$
+
+Sample correlation coefficients:
+$$r_{ik} = \frac{s_{ik}}{\sqrt{s_{ii}}\sqrt{s_{kk}}}=\frac{\sum_{j=1}^{n}(x_{ji}-\bar{x}_{i})(x_{jk} - \bar{x}_{k})}{\sqrt{\sum^{n}_{j=1}(x_{ji}-\bar{x}_{i})^2}\sqrt{\sum^{n}_{j=1}(x_{jk}-\bar{x}_{k})^2}}\qquad(1-5)$$
+Sample covariance matrix:
+$$\textbf{S}=\frac{1}{1-n}\textbf{X}'\Big(\textbf{I}-\frac{1}{n}\textbf{11}'\Big)\textbf{X}\qquad (3-27)$$
+Sample standard deviation matrix:
+$$\textbf{D}_{(p\times p)}^{1/2} = \begin{bmatrix}
+                                    \sqrt{s_{11}} & 0 & \cdots & 0\\
+                                    0 & \sqrt{s_{22}} & \cdots & 0\\
+                                    \vdots & \vdots & \ddots & \vdots\\
+                                    0 & 0 & \cdots & \sqrt{s_{pp}}
+\end{bmatrix}\qquad (3-28)$$
+Sample correlation matrix:
+$$\textbf{R}=\textbf{D}^{-1/2}\textbf{SD}^{-1/2}\qquad (3-29)$$
