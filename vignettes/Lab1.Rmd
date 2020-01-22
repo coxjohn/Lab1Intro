@@ -50,8 +50,8 @@ Here is an analysis of the data from Table 1-2 from a paper mill using the funct
 data = read.table("T1-2.DAT");
 
 sampmean(data)
-sampcov(data)
-sampcor(data)
+sampcov(data, c("Density", "Strength(MD)", "Strength(CD)"))
+sampcor(data, c("Density", "Strength(MD)", "Strength(CD)"))
 ```
 
 
