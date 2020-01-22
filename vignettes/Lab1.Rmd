@@ -18,6 +18,10 @@ knitr::opts_chunk$set(
 library(Lab1Intro)
 ```
 
+## Links
+
+[Here](https://github.com/coxjohn/Lab1Intro) is a link to the Github repository containing this package, Lab1Intro.
+You can find documentation for making packages in R here: <http://r-pkgs.had.co.nz/>.
 
 ## $\LaTeX$ formulae
 Sample mean:
@@ -38,13 +42,36 @@ $$\textbf{D}_{(p\times p)}^{1/2} = \begin{bmatrix}
 \end{bmatrix}\qquad (3-28)$$
 Sample correlation matrix:
 $$\textbf{R}=\textbf{D}^{-1/2}\textbf{SD}^{-1/2}\qquad (3-29)$$
-##Paper mill data
-Here is an analysis of the data from Table 1-2 from a paper mill using the functions created for this assignment:
+
+
+## Paper mill data
+Here is an analysis of the data from Table 1-2 from a paper mill using the functions created for this lab:
 ```{r}
-data = read.table("T1-2.DAT")
+data = read.table("T1-2.DAT");
 
 sampmean(data)
 sampcov(data)
 sampcor(data)
 ```
 
+
+## Assessment
+The assessment for this course differs between 4793 and 5793. The assessment for 4793 is as follows:
+
+* Clicker quiz each class and lab - 10%
+* 4 Assignments - 20%
+* Laboratories - 10%
+* 2 Exams - 20%
+* 2 Projects - 10%
+* 1 final - 30%
+
+For 5793:
+
+* Clicker quiz each class and lab    - 10%
+* 4 Assignments                      - 20%
+* Laboratories                       - 10%
+* 2 Exams                            - 20%
+* 3 Projects (more weight on third)  - 10%
+* 1 final                            - 30%
+
+The only difference between the two is that there is an additional project for 5793, with more weight placed on the third project than the other two.
