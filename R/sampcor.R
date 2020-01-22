@@ -12,11 +12,11 @@
 #' @export
 #'
 #' @examples
-#' sampcov(data, c("WEIGHT", "LENGTH", "DENSITY"))
+#' sampcor(data, c("WEIGHT", "LENGTH", "DENSITY"))
 sampcor = function(x, varnames = NULL){
   nrows = dim(x)[1]
   ncols = dim(x)[2]
-  output = matrix(nrow = ncols, ncol = ncols, dimnames = varnames)
+  output = matrix(nrow = ncols, ncol = ncols, dimnames = list(list(),varnames))
 
   s = sampcov(x)
 

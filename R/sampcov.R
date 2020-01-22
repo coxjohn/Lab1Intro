@@ -17,7 +17,7 @@
 sampcov = function(x, varnames = NULL){
   nrows = dim(x)[1]
   ncols = dim(x)[2]
-  output = matrix(nrow = ncols, ncol = ncols, dimnames = varnames)
+  output = matrix(nrow = ncols, ncol = ncols, dimnames = list(list(),varnames))
 
   for(i in 1:ncols){
     for(k in 1:ncols){
