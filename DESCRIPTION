@@ -4,8 +4,9 @@ Title: Lab1Intro
 Version: 0.1.0
 Author: John Cox
 Maintainer: John Cox <john.d.cox-1@ou.edu>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Description: A package containing three basic functions for multivariate analysis, with
+    vignette containing examples of uses for these functions, along with LaTeX formulae
+    and a summary of the assessment for the course MATH 4793/5973 at OU.
 License: MIT
 Encoding: UTF-8
 LazyData: true
