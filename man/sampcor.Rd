@@ -22,5 +22,5 @@ Accepts a data set and creates a correlation matrix using the sampcov function a
 correlation matrix
 }
 \examples{
-sampcov(data, c("WEIGHT", "LENGTH", "DENSITY"))
+sampcor(data, c("WEIGHT", "LENGTH", "DENSITY"))
 }
