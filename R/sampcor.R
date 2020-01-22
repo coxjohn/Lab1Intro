@@ -1,12 +1,18 @@
-#' Sample correlation coefficient
+#' Sample correlation matrix
 #'
-#' @param x
-#' @param varnames
+#' Returns a correlation matrix for a data sample
+#'
+#'
+#' Accepts a data set and creates a correlation matrix using the sampcov function and the definition of the
+#' correlation matrix
+#' @param x data set
+#' @param varnames list of names
 #'
 #' @return
 #' @export
 #'
 #' @examples
+#' sampcov(data, c("WEIGHT", "LENGTH", "DENSITY"))
 sampcor = function(x, varnames = NULL){
   nrows = dim(x)[1]
   ncols = dim(x)[2]
