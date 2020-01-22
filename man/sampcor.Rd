@@ -2,16 +2,25 @@
 % Please edit documentation in R/sampcor.R
 \name{sampcor}
 \alias{sampcor}
-\title{Sample correlation coefficient}
+\title{Sample correlation matrix}
 \usage{
 sampcor(x, varnames = NULL)
 }
 \arguments{
-\item{varnames}{}
+\item{x}{data set}
+
+\item{varnames}{list of names}
 }
 \value{
 
 }
 \description{
-Sample correlation coefficient
+Returns a correlation matrix for a data sample
+}
+\details{
+Accepts a data set and creates a correlation matrix using the sampcov function and the definition of the
+correlation matrix
+}
+\examples{
+sampcov(data, c("WEIGHT", "LENGTH", "DENSITY"))
 }

@@ -7,11 +7,18 @@
 sampmean(x)
 }
 \arguments{
-\item{x}{}
+\item{x}{a data matrix}
 }
 \value{
 
 }
 \description{
-Sample mean
+Returns a vector of the sample mean
+}
+\details{
+Accepts a data set and takes the mean of each variable and then outputs a
+vector containing each of those means
+}
+\examples{
+sampmean(data)
 }
